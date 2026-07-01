@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Personnel</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Health Personnel</h1>
+        <p>Welcome to the Health Personnel Kiosk. Please put your information below:</p>
+    </header>
+    <br><br>
+    <section class="info">
+        <form class="bmi">
+            <label for="name">Enter your Full Name: </label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="age">Enter your Age (12-45): </label><br>
+            <input type="number" id="age" name="age" required min="12" max="45"><br><br>
+            <label for="gender">Enter your Gender: </label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br><br>
+            <label for="weight">Enter your Weight (kg): </label><br>
+            <input type="number" id="weight" name="weight" required><br><br>
+            <label for="height">Enter your Height (cm): </label><br>
+            <input type="number" id="height" name="height" required><br><br>
+            <button type="button" onclick="checkBMI()">Calculate BMI</button>
+            <button type="reset">Reset</button>
+            <p id="bmiResult"></p>
+        </form>
+    </section>
+    <div class="history">
+        <h2>BMI History</h2>
+        <p id="bmiHistory"></p>
+    </div>
+    <footer>
+        <p>&copy; 2024 Health Personnel Kiosk. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
